@@ -3,6 +3,22 @@
 <!-- title: -->
 # Benchmarking Unit of Work vs TransactionScope
 
+### to execute this project:
+run docker:
+``` bash
+ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123" -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:2022-latest
+```
+then run dotnet with in release mode:
+
+``` bash
+dotnet run --project TransactionsBenchmark -c Release   
+
+```
+
+
+
+
+
 <!-- TOC -->
 - [Benchmarking Unit of Work vs TransactionScope](#benchmarking)
 
